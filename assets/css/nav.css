@@ -1,0 +1,76 @@
+@font-face {
+  font-family: nyt-franklin-700;
+  src: url(../fonts/franklin-normal-700.ttf);
+}
+
+
+nav {
+  width: 100vw;
+  background-color: white;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#nav-content {
+  height: 36px;
+  padding: 4px 15px 2px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+#nav-content button {
+  padding: 11px 12px 8px;
+  border-radius: 3px;
+  border: 1px solid #326891;
+  background-color: #326891;
+  color: #fff;
+  font-size: 11px;
+  line-height: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: nyt-franklin-700;
+  margin-right: 7px;
+  white-space: nowrap;
+}
+
+#settings-svg {
+  width: 16px;
+  height: 16px;
+}
+
+#nav-content :nth-child(2) {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.nyt-logo {
+  text-align: center;
+  flex-grow: 1;
+  max-height: 42px;
+  padding-top: 6px;
+}
+
+.nyt-logo svg{
+  box-sizing: border-box;
+  height: 26px;
+}
+
+#nav-content h2 {
+  white-space: nowrap;
+  font-family: nyt-franklin-700;
+  font-size: 14.25px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  line-height: 19px;
+}
+
+#nav-content h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
