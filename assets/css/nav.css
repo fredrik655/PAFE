@@ -23,8 +23,8 @@ nav {
 #nav-content button {
   padding: 11px 12px 8px;
   border-radius: 3px;
-  border: 1px solid #326891;
-  background-color: #326891;
+  border: 1px solid #567b95;
+  background-color: #567b95;
   color: #fff;
   font-size: 11px;
   line-height: 11px;
@@ -39,12 +39,15 @@ nav {
 #settings-svg {
   width: 16px;
   height: 16px;
+  margin-right: 8px;
+  padding: 8px 9px 9px;
 }
 
-#nav-content :nth-child(2) {
+#magnifying-glass {
   width: 16px;
   height: 16px;
-  margin-left: 10px;
+  margin-right: 8px;
+  padding: 8px 11px 9px;
 }
 
 .nyt-logo {
@@ -55,7 +58,7 @@ nav {
 }
 
 .nyt-logo svg{
-  box-sizing: border-box;
+  box-sizing: border-box; 
   height: 26px;
 }
 

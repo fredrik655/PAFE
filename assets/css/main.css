@@ -1,3 +1,103 @@
+@font-face {
+  font-family: nyt-franklin-300;
+  src:url(../fonts/franklin-normal-300.ttf);
+}
+@font-face{
+  font-family: nyt-cheltenham-italic-700;
+  src: url(../fonts/cheltenham-italic-700.ttf);
+}
+
 html {
-  background-color: chocolate;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#grid-image-container {
+  background-image: url(../images/inflation-945.png);
+  background-size: cover;
+  width: 945px;
+  height: 575px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-image-item p {
+  font-family: nyt-franklin-300;
+  font-size: 14px;
+  line-height: 17px;
+  padding-right: 10px;
+}
+
+.grid-image-item span {
+  font-family: nyt-franklin-700;
+  letter-spacing: .05em;
+  font-size: 11px;
+}
+
+.grid-image-item {
+  grid-row-start: 2;
+}
+
+.grid-image-item:nth-child(1n+5) {
+  grid-row-start: 4;
+}
+
+#title-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.75em;
+}
+
+#title {
+  width: 600px;
+}
+#title h1 {
+  font-size: 2.5em;
+  line-height: 3rem;
+  font-family: nyt-cheltenham-italic-700;
+  margin: 0 20px 20px 0;
+}
+
+#social-icons {
+  width: 600px;
+  border-top: 1px solid #ebebeb;
+  margin-bottom: 5px;
+}
+
+#social-icons ul{
+  width: 283px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  background-color: #eee;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+li:nth-child(n+6) {
+  background-color: white;
+}
+
+li svg {
+  margin: 6px 0;
+}
+
+li img {
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
 }
